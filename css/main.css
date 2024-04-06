@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: RobotoMed;
+    src: url(/fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: RobotoReg;
+    src: url(/fonts/Roboto-Regular.ttf);
+}
+:root{
+    --index: calc(1vw + 1vh)
+}
+.container{
+    max-width: 1159px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.header{
+    border-bottom: 1px solid #11111180;
+}
+.content{
+    margin: 10px 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    column-gap:30px;
+    row-gap: 30px;
+
+}
+.content--phone{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.content--phone h3{
+    font-weight: 700;
+    color: #007198;
+    font-size: 18px;
+    font-family: RobotoMed;
+}
+.content--phone button{
+    background-color: #F47220;
+    color: #181818;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-family: RobotoMed;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+.content--phone button:hover{
+    box-shadow: 0em 0 .8em #F47220;
+    transition: .4s;
+}
+
+/* NAVBAR */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+    column-gap: 20px;
+    row-gap: 10px;
+    margin: 15px 0;
+}
+.nav li{
+    font-family: RobotoReg;
+    cursor: pointer;
+    /* font-weight: 100; */
+}
+
+/* HERO */
+.hero{
+    background: #48B8DF33;
+}
+.hero img{
+    width: 100%;
+}
+.hero--content{
+    position: relative;
+    display: inline-block;
+    column-gap: 20px;
+}
+.hero--content h1{
+    position: absolute;
+    font-family: RobotoMed;
+    color: #181818;
+    font-size: calc(var(--index) * 2);
+    top: 7%;
+}
+.hero--content h1 span{
+    color: #007198;
+}
+.hero--content p{
+    position: absolute;
+    font-family: RobotoReg;
+    font-size:calc(var(--index) * .60) ;
+    top: 18%;
+    right: 1px;
+}
+
+/* SEC1 */
+.sec1 h1{
+    font-family: RobotoMed;
+    font-size: calc(var(--index) * 1.3);
+    margin: 80px 0 10px 0;
+}
+.sec1 span{
+    color: #007198;
+}
+.sec1--blocks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #007198;
+    width:calc(var(--index) * 15);
+    height: calc(var(--index) * 35);
+    cursor: pointer;
+}
+.block:hover{
+    box-shadow: 0.2em 0 0.9em #181818;
+    transition: .4s;
+}
+.block img{
+    width: calc(var(--index)* 9);
+    height: calc(var(--index)* 11);
+}
+.block h2{
+    font-family: RobotoReg;
+    font-size: calc(var(--index) * .85);
+    margin-top: 10px;
+}
+.block h2 span{
+    font-family: RobotoMed;
+    font-weight: 700;
+    color: #181818;
+}
+.block h5{
+    margin-right: -65%;
+    margin-top: 5%;
+    font-family: 'RobotoMed';
+    font-size: calc(var(--index)* 1);
+    cursor: pointer;
+}
+ 
+/* SEC2 */
+.sec2 h1{
+    margin: 60px 0 30px 0;
+    font-family: RobotoMed;
+    font-size: calc(var(--index) * 1.3);
+}
+.sec2 span{
+    color: #007198;
+}
+.sec2--blocks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.blockk{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #007198;
+    width: calc(var(--index)* 15);
+    height: calc(var(--index)* 21);
+    cursor: pointer;
+}
+.blockk:hover{
+    box-shadow: 0.2em 0 0.9em #181818;
+    transition: .4s;
+}
+.blockk img{
+    width: calc(var(--index)* 4);
+    height: calc(var(--index)* 7);
+}
+.blockk h2{
+    font-family: RobotoReg;
+    font-size: calc(var(--index) * .85);
+    margin-top: 10px;
+}
+.blockk h2 span{
+    font-family: RobotoMed;
+    font-weight: 700;
+    color: #181818;
+}
+
+/*SEC3*/
+.sec3--text p{
+    margin: 70px 0 40px 0;
+    font-family: RobotoReg;
+    font-size: calc(var(--index) * .65);
+}
+.sec3--imgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.sec3--imgs img{
+    width: 190px;
+    height: 50px;
+}
+
+/* FOOTER */
+.footer{    
+    background: #48B8DF33;
+    margin-top: 100px;
+    height: 200px;
+}
+.footer--content{
+    padding:8% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 20px;
+}
+.footer--content h4{
+    font-family: RobotoReg;
+    color: grey;
+}
